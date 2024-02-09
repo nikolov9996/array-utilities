@@ -1,0 +1,43 @@
+{
+  "name": "@zolv/array-utilities",
+  "version": "0.0.1",
+  "description": "javascript utils library for array operations",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup index.ts --format cjs,esm --dts",
+    "lint": "tsc",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikolov9996/array-utilities.git"
+  },
+  "keywords": [
+    "array-utils",
+    "utils",
+    "js",
+    "ts",
+    "javascript-utils",
+    "javascript",
+    "array"
+  ],
+  "dependencies": {
+    "tsup": "^6.5.0",
+    "typescript": "^5.3.3"
+  },
+  "author": "Zhivko Nikolov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikolov9996/array-utilities/issues"
+  },
+  "homepage": "https://github.com/nikolov9996/array-utilities#readme"
+}
