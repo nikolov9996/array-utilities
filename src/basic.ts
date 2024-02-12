@@ -26,3 +26,7 @@ export function randomizeArray(array: any[]): any[] {
   }
   return newArray;
 }
+
+export function mergeArrays(arr: any[][]): any[] {
+  return arr.flat();
+}
