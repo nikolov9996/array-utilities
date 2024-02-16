@@ -30,14 +30,15 @@
     "javascript",
     "array"
   ],
-  "dependencies": {
-    "tsup": "^6.5.0",
-    "typescript": "^5.3.3"
-  },
   "author": "Zhivko Nikolov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nikolov9996/array-utilities/issues"
   },
-  "homepage": "https://github.com/nikolov9996/array-utilities#readme"
+  "homepage": "https://github.com/nikolov9996/array-utilities#readme",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1",
+    "tsup": "^6.5.0",
+    "typescript": "^5.3.3"
+  }
 }

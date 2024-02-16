@@ -1,4 +1,11 @@
-import { CreateArray, SortArray } from "./types";
+import {
+  CreateArray,
+  RemoveAllValues,
+  RemoveByIndex,
+  RemoveDuplicates,
+  RemoveValue,
+  SortArray,
+} from "./types";
 
 export function createArray({ length }: CreateArray): number[] {
   // creating array of [1,1,1] for example
@@ -30,3 +37,51 @@ export function randomizeArray(array: any[]): any[] {
 export function mergeArrays(arr: any[][]): any[] {
   return arr.flat();
 }
+
+export function removeByIndex({ arr, index }: RemoveByIndex) {
+  if (isNaN(Number(index))) {
+    // if index is not numeric it returns not modified array
+    return arr;
+  }
+
+  if (Number(index) > arr.length) {
+    return [];
+  }
+
+  if (Number(index) > -1) {
+    arr.splice(Number(index), 1);
+    return arr;
+  }
+
+  return arr;
+}
+
+export function removeValue({ arr, value }: RemoveValue) {
+  const index = arr.indexOf(value);
+  // returns not modified array if value is not found
+  if (index > -1) {
+    arr.splice(index, 1);
+  }
+
+  return arr;
+}
+
+export function removeAllValues({ arr, value }: RemoveAllValues) {
+  // removes all values that match the input value
+  // returns not modified array if value is not found
+  let i = 0;
+  while (i < arr.length) {
+    if (arr[i] === value) {
+      arr.splice(i, 1);
+    } else {
+      ++i;
+    }
+  }
+  return arr;
+}
+
+export function removeDuplicates({ arr }: RemoveDuplicates) {
+  return [...new Set(arr)];
+}
+
+
