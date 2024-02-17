@@ -1,5 +1,7 @@
 # Simple Array functions 
+
 ## Using only simple arrays of strings, number or mixed (string & numbers)
+### Important thing is that the util functions will not modify the original array!
 ### Simple examples:
 |Function Name|Arguments|Result|
 |----------------|------------|--------------|

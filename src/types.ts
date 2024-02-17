@@ -3,7 +3,7 @@ export type CreateArray = {
 };
 
 export type SortArray = {
-  arr: string[] | number[];
+  arr: (string | number)[];
   order: "ASC" | "DESC";
 };
 
