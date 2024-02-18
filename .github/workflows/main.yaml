@@ -13,11 +13,11 @@ jobs:
         with:
           node-version: 20.x
           cache: "npm"
-        name: install dependancies
       - run: npm install
-        name: run tests
+        name: install dependancies
       - run: npm run test
-        name: run lint
+        name: run tests
       - run: npm run lint
-        name: run build
+        name: run lint
       - run: npm run build
+        name: run build
