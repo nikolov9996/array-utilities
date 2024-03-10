@@ -25,3 +25,10 @@ export type RemoveAllValues = {
 export type RemoveDuplicates = {
   arr: any[];
 };
+
+// arrays of objects
+export type FindByValue = {
+  arr: any[];
+  key: string | number;
+  value: string | number;
+};

@@ -1,6 +1,6 @@
 {
   "name": "@zolv/array-utilities",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "javascript utils library for array operations",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
